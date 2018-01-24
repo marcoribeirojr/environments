@@ -1,0 +1,9 @@
+version: '3'
+services:
+  ambiente-r:
+    image: "rocker/tidyverse"
+    working_dir: /home/rstudio
+    ports:
+      - "8787:8787"
+    volumes:
+      - .:/home/rstudio
